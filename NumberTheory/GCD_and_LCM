@@ -4,7 +4,7 @@
 def GCD(a, b):
   if a == b:
     return b
-  return (b%a, a)
+  return GCD(b%a, a)
 def lcm(a,b):
   product = a*b
   hcf = GCD(a, b)
